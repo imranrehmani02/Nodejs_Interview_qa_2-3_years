@@ -29,7 +29,7 @@ Ans. In javascript, The THIS keyword always refers to an object. The behaviour o
 const person = {
     name: "Aman",
     greet: function(){
-        return `Hello, This is ${person.name}`;
+        return `Hello, This is ${this.name}`;
     }
 }
 console.log(person.greet()); // Hello, This is Aman.

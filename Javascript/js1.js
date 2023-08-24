@@ -52,7 +52,7 @@ Ans. The double equal (==) operator compares the values of two operands while tr
 --------------------------------------------------------------------------------------------------------
 
 7. What is prototype in javascript ?
-Ans. In javascript prototype is an object from which other object can inherit properties and methods.
+Ans. In javascript, prototype is an object from which other object can inherit properties and methods.
     Each object has an internal '[[ prototype ]]' property that refers to its prototype.
 
 ---------------------------------------------------------------------------------------------------------
