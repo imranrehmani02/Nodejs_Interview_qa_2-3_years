@@ -31,7 +31,7 @@ let user = {};
 [user.name, user.surname] = "John Smith".split(' ');
 
 console.log(user.name); // John
-console.log(user.surname); // Smit
+console.log(user.surname); // Smith
 
 // Object literals
 function createMachine(name, status) {
