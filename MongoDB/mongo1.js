@@ -1,6 +1,6 @@
 /*
 1. What is MongoDB ?
-Ans. MongoDB is popular open source, document oriented NoSQL (non-relational)
+Ans. MongoDB is a popular open source, document oriented NoSQL (non-relational)
     database management system.
             It was developed to handle large volumes of structured and unstructured data
     in a flexible, scalable and high performance manner.
@@ -10,7 +10,7 @@ Ans. MongoDB is popular open source, document oriented NoSQL (non-relational)
 
 
 2. How MongoDB save data ?
-Ans. MongoDB saved data using a flexible and schemaless document model. In mongodb data
+Ans. MongoDB save data using a flexible and schemaless document model. In mongodb data
     is stored in collections.
 
 
@@ -96,7 +96,7 @@ Ans. CRUD Queries:-
 5. Sorting in MongoDB ?
 Ans. 
         db.collection.find().sort(
-            { field: order}
+            { field_1: order_1}
         );
 
 

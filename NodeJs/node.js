@@ -1,6 +1,6 @@
 /*
 1. What is Node js ?
-Ans. Node js is an open source server-side environment built on google chrome V8
+Ans. Node js is an open source server-side environment built on google chromes V8
         engine that uses javascript on the server side.
 
     -> Node js is an open source, cross platform javascript runtime environment and
@@ -28,7 +28,7 @@ Ans. Node js work based on an event-driven, non-blocking I/o model, which allows
 
 
 4. Why we use Node js ?
-Ans. Node js is a javascript run time built on chromes v8 engine.
+Ans. Node js is a javascript run time environment built on chromes v8 engine.
         Node js uses an event-driven, non-blocking I/o model that makes it light weight
     and efficient. NPM is the largest ecosystem of open source libraries in the world.
 

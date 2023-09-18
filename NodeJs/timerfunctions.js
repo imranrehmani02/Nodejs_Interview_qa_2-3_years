@@ -5,6 +5,7 @@ Ans.The Timers module in Node.js contains functions that execute code after a se
     globally to emulate the browser JavaScript API.
 */
 
+
 /*
 2. What is setTimeout function ?
 Ans. The setTimeout function is used to execute a callback function after a specifies delay,
@@ -71,11 +72,11 @@ Ans. setImmediate adds callback to the event queue that are executed during the 
 console.log("Hello => number 1");
 
 setImmediate(() => {
-  console.log("Running before the timeout => number 3");
+  console.log("Running after the timeout => number 4");
 });
 
 setTimeout(() => {
-  console.log("The timeout running last => number 4");
+  console.log("The timeout running => number 3");
 }, 0);
 
 process.nextTick(() => {
@@ -87,7 +88,16 @@ Output:-
 
 Hello => number 1
 Running at next tick => number 2
-The timeout running last => number 4
-Running before the timeout => number 3
+The timeout running => number 3
+Running after the timeout => number 4
 
 */
+
+// Find output of below code ?
+const msg1 = setTimeout(() => {
+    console.log("Hello - setTimeout");
+},500);
+clearTimeout(msg1);
+// Output
+// <no output>  :- clearTimeout() method cancels a timeout previously established
+// by calling setTimeout();

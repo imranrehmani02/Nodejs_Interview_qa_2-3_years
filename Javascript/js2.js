@@ -44,3 +44,30 @@ Ans. Cluster of nodejs processes can be used to run multiple instance of node js
 
 */
 
+
+/*
+Q. What are the different design patterns of javascript ?
+Ans. Design patterns in JavaScript are reusable solutions to common problems that 
+    arise in software design. These patterns help developers create code that is 
+    more maintainable, modular, and efficient.
+    There are 23 fundamental design patterns developers can apply in javascript.
+
+    Most commonly used design patterns in javascript.
+    1) Singleton Pattern
+    2) Factory Pattern
+    3) Constructor Pattern
+    4) Module Pattern
+    5) Observer Pattern
+    6) Prototype Pattern
+    7) Decorator Pattern
+    8) Revealing Module Pattern
+    9) Command Pattern
+    10) Chain of Responsibility Pattern
+    11) State Pattern
+    12) Strategy Pattern
+    13) Command Query Responsibility Segregation (CQRS)
+    14) Dependency Injection (DI):
+    15) Flux and Redux (State Management Patterns)
+    16) Middleware Pattern
+*/
+
