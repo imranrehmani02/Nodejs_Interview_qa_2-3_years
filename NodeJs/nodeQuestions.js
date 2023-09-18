@@ -36,4 +36,16 @@ Ans. A socket represents a single connection between a client and a server where
 
 6. How to generate unique id in node js ?
 Ans. The built-in crypto module in node provides the randomUUID() method to generate UUID's.
+
+
+7. What is streams in node js ?
+Ans. A stream is an abstract interface for working with streaming data in node js.
+
+
+8. How many types of streams in node js ?
+Ans. The four types of streams in node js.
+    1) Readable
+    2) Writable
+    3) Duplex
+    4) Transform
 */
