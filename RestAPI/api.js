@@ -81,4 +81,80 @@ Ans. Rest API:-
         5) Only TCP connection.
         6) It depends upon the IP address and PORT number to retrieve the data.
 
+
+
+
+8. Which HTTP method is most secure in node js ?
+Ans. The security of HTTP method depends on how it is used and the content in which
+    it is applied.
+
+
+
+9. How many to send data in GET and POST method ?
+Ans. The GET method supports only string data types, while the POST method supports
+    different datatypes such as string, numeric, binary and so on.
+
+
+
+
+10. How can we handle uncaught exception in a central ?
+Ans. We can handle uncaught exception in a central by using `process.on()` method.
+
+
+
+11. How to use log files on server ?
+Ans. Using log files on server is an essential practise for monetoring and toubleshooting
+    applications and server related issues.
+        We can use popular logging libraries like winston, morgan and log4js.
+
+
+
+12. Can we call 3rd party API's without using external module ?
+Ans. Yes, we can use 3rd party API's without using external module by using HTTP method.
+
+    External module:- Axios, Request
+
+
+
+13. What are testcases ?
+Ans. Testcases are fundamental concept in software testing. They are sets of conditions
+    or criteria that are used to determine the quality, correctness and performance of
+    a software application. Testcases help verify whether the software functions as
+    expected and meets its requirments.
+
+
+
+14. What is integral testing ?
+Ans. Integration testing is a software testing technique that focuses on verifying the 
+    interactions and data exchange between different components, modules, or services 
+    within a software system. The primary goal of integration testing is to ensure that 
+    these integrated components work together as expected and that they can communicate 
+    and collaborate without issues.
+
+
+
+
+15. What is mock data in testing ?
+Ans. Mock data in testing refers to artificially generated or simulated data that is 
+    used during the testing process to mimic real-world scenarios and conditions.
+    Mock data is created to mimic the characteristics and structure of real data, 
+    allowing testers to perform various types of testing without relying on actual 
+    production data.
+
+
+
+
+16. How to check database connection in testing ?
+Ans. In testing, we can test the intraction between different components of application
+    including the database. To check the database connection in integration tests, we
+    can connect to separate testing database.
+
+
+
+17. what is assetion in Chai and Mocha ?
+Ans. Assertions refer to statements or conditions that you can use to validate whether 
+    the actual output of your code matches the expected behavior.
+        Chai is an assertion library commonly used with Mocha, a testing framework for
+    JavaScript. 
+
 */

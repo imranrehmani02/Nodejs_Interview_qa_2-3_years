@@ -81,4 +81,17 @@ Ans.
 
     Foreign Key:- A FOREIGN KEY is a field (or collection of fields) in one table that refers 
     to the PRIMARY KEY in another table.
+
+
+
+10. How to create indexing in mysql ?
+Ans. The CREATE INDEX statement is used to create index in tables.
+    Syntax:- CREATE INDEX index_name ON table_name (column1, column2, ....);
+    Example:- CREATE INDEX idx_lastname ON persons (lastname);
+
+
+
+11. How to drop index in mysql ?
+Ans. The DROP INDEX statement is used to delete an index in the table.
+    Syntax: ALTER TABLE table_name DROP INDEX index_name;
 */

@@ -1,6 +1,6 @@
 /*
 1. What is Node js ?
-Ans. Node js is an open source server-side environment built on google chrome V8
+Ans. Node js is an open source server-side environment built on google chromes V8
         engine that uses javascript on the server side.
 
     -> Node js is an open source, cross platform javascript runtime environment and
@@ -28,7 +28,7 @@ Ans. Node js work based on an event-driven, non-blocking I/o model, which allows
 
 
 4. Why we use Node js ?
-Ans. Node js is a javascript run time built on chromes v8 engine.
+Ans. Node js is a javascript run time environment built on chromes v8 engine.
         Node js uses an event-driven, non-blocking I/o model that makes it light weight
     and efficient. NPM is the largest ecosystem of open source libraries in the world.
 
@@ -82,4 +82,65 @@ Ans. Node js is an asynchronous event-driven javascript runtime environment.
 
 11. Is node js single threaded or multi threaded ?
 Ans. Node js operates on a single threaded with event loop model.
+
+
+
+12. How events work with sync-async function simultaneously ?
+Ans. Events work with async-async function simultaneously by using its event-driven
+    and non-blocking architecture.
+
+
+13. How threading works in node js ?
+Ans. Node.js is built on a single-threaded, event-driven architecture. This means 
+    that by default, Node.js runs JavaScript code in a single thread. This single 
+    thread is often referred to as the "event loop." However, Node.js does use 
+    threads internally for certain operations and features.
+
+    1) Single Threaded Event Loop:- This thread is responsible for executing JavaScript code, 
+                        handling events, and managing asynchronous I/O operations.
+
+    2) Libuv:- Node.js uses the Libuv library to handle I/O operations asynchronously. 
+            Libuv manages a thread pool, allowing Node.js to offload blocking I/O operations
+            (like file system operations or network requests) to worker threads without 
+            blocking the main event loop.
+
+    3) Worker Threads:- Node.js introduced the worker_threads module to allow developers 
+                    to create and manage additional JavaScript threads, often referred 
+                    to as "worker threads" or "threads" in Node.js. These threads are 
+                    separate from the main event loop and can execute JavaScript code concurrently.
+
+    4) Child Processes:- Node.js can also create and manage child processes using the child_process
+                    module. Each child process runs in its own separate thread or process, allowing 
+                    you to execute external commands or run separate instances of Node.js.
+
+
+
+14. Can we use multithreading in Node js ?
+Ans. We can use multi-threading in Node.js using the worker_threads module. This module allows 
+    you to create and manage additional JavaScript threads in Node js. These threads are separate
+    from the main event loop and can execute JavaScript code concurrently, making them suitable 
+    for CPU-bound tasks and parallel processing.
+
+
+
+15. What is worker thread in node js ?
+Ans. A worker thread refers to a separate JavaScript thread that can be used to perform concurrent
+    and CPU-intensive operations without blocking the main event loop.
+
+
+
+16. What is child process in node js ?
+Ans. A child process refers to a separate, independent process that can be spawned from your main 
+    Node.js process. These child processes allow you to run external system commands, scripts, 
+    or other programs as separate processes.
+
+
+
+17. What is lodash ?
+Ans. Lodash is a JavaScript library that works on the top of underscore.js. 
+    It helps in working with arrays, strings, objects, numbers, etc. It provides us 
+    with various inbuilt functions and uses a functional programming approach which 
+    that coding in JavaScript easier to understand because instead of writing repetitive 
+    functions, tasks can be accomplished with a single line of code. It also makes it easier 
+    to work with objects in JavaScript if they require a lot of manipulation to be done upon them.
 */

@@ -26,4 +26,26 @@ Ans.
 Ans. The process object in node js is a global object that can be accessed inside
     any module without requiring it. It is an essential component in node js
     ecosystem.
+
+
+5. What is socket ?
+Ans. A socket represents a single connection between a client and a server where each
+    the client or server can send and receive data at the same time where library is
+    based on an event-driven system, emit and listen for specific events to be trigged.
+
+
+6. How to generate unique id in node js ?
+Ans. The built-in crypto module in node provides the randomUUID() method to generate UUID's.
+
+
+7. What is streams in node js ?
+Ans. A stream is an abstract interface for working with streaming data in node js.
+
+
+8. How many types of streams in node js ?
+Ans. The four types of streams in node js.
+    1) Readable
+    2) Writable
+    3) Duplex
+    4) Transform
 */

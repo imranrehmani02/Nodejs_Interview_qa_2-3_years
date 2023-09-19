@@ -39,4 +39,32 @@ Ans. When you are encoding the JWT token, encode the use role also. When you dec
     
 5. Params is URL
 Ans. /api/profile/:profileId
+
+
+
+6. How to secure API ?
+Ans. API security in node js
+    1) Authentication
+    2) Authorization
+    3) Input validation
+    4) HTTPS or TLS
+    5) CORS
+    6) Rate limiting and Ddos protection
+    7) Session Management
+    8) Error Handling
+    9) Security Headers
+    10) API versioning
+
+
+
+7. What is CORS ?
+Ans. CORS in node js stands for Cross-Origin-Resource-Sharing. It is a mechanism by which resources
+    are shared across different servers.
+
+
+
+8. Why do we use CORS ?
+Ans. All requests made from the frontend of a different origin or to a backend of a different origin
+    will be blocked by browser. CORS allows us to bypass this policy in case of scenarious where accessing
+    third party resources becomes necessary.
 */

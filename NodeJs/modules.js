@@ -26,6 +26,7 @@ Ans. Fs module is use for reading, writing, creating and removing files, working
 Ans. Path module is use for resolve, join, normalize, extracting path, file extention
     manipulation and parsing path.
 
+
 4. What is HTTP methods ?
 Ans. HTTP (Hyper Text Transfer Protocol) defines a set of methods, that indicate the
     desired action to be performedon a resources.
@@ -37,7 +38,12 @@ Ans. module.exports is an object in node js file that holds the exported value a
     from that module.
 
 
-6. Difference b/w module.exports and exports /
+6. Where are global module stored in node js ?
+Ans. Global modules are installed in the standard system in root location in system directory
+    /ust/local/lob/node_modules project directory.
+
+
+7. Difference b/w module.exports and exports /
 Ans. 
     -> Module.exports:- When we want to export a single class/variable/function from
         one module to another module, we use module.exports.

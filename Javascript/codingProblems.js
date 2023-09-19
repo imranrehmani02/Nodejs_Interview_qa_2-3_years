@@ -6,12 +6,14 @@ if (typeof name === 'string') {
     console.log(false);
 }
 
+
 // What's the output of below code ?
 if (typeof name === undefined) {
     console.log(true);
 } else {
     console.log(false);         // false
 }
+
 
 // What's the output of below code ?
 const promise = new Promise((resolve, reject) => {
@@ -23,8 +25,10 @@ const promise = new Promise((resolve, reject) => {
 )
 promise.then((value) => console.log(value));   // I am a promise (after 2 second)
 
+
 // What's the output of below code ?
 console.log(typeof (1 + 2));           // number
+
 
 // What's the output of below code ?
 console.log('first');
@@ -38,26 +42,31 @@ console.log('third');
 // third
 // second
 
+
 // What's the output of below code ?
 const msg = setTimeout(() => {
     console.log('Hello');
 }, 3000);
 clearTimeout(msg);
 
+
 // What's the output of below code ?
 var x;
 var y = undefined;
 console.log(x === y);         // true
 
+
 // What's the output of below code ?
 console.log(3 + 2 + '7');       // 57
+
 
 // What's the output of below code ?
 if (NaN === NaN) {
     console.log(true);
 } else {
-    console.group(false);       // false
+    console.log(false);       // false
 }
+
 
 // What's the output of below code ?
 if (undefined === undefined) {
@@ -66,6 +75,7 @@ if (undefined === undefined) {
     console.log(false);
 }
 
+
 // What's the output of below code ?
 if (['a'] == 'a') {
     console.log(true);        // true
@@ -73,12 +83,14 @@ if (['a'] == 'a') {
     console.log(false);
 }
 
+
 // What's the output of below code ?
 if ('a' == 'a') {
     console.log(true);        // true
 } else {
     console.log(false);
 }
+
 
 // What's the output of below code ?
 var a = 10;
@@ -88,6 +100,7 @@ function box() {
 }
 box();
 
+
 // What's the output of below code ?
 let b = 10;
 function triangle() {
@@ -96,9 +109,11 @@ function triangle() {
 }
 triangle();
 
+
 // What's the output of below code ?
 console.log("10" - 9);    // 1
 console.log("10" + 9);   // 109
+
 
 // Write a function for remove sub object values in main object
 let arr1 = [{
@@ -124,28 +139,68 @@ let arr1 = [{
 }]
 */
 
-function clearArray(arr1){
-    const arr2 = arr1.map(ar1=>{
+function clearArray(arr1) {
+    const arr2 = arr1.map(ar1 => {
         return {
-            "bc": ar1.bc, 
-            "bpt": ar1.bpt, 
-            "bds": ar1.bds, 
+            "bc": ar1.bc,
+            "bpt": ar1.bpt,
+            "bds": ar1.bds,
             ...ar1.extraData
         };
     })
-    console.log('arr2:--',arr2);   // [return above expected output]
+    console.log('arr2:--', arr2);   // [return above expected output]
 }
 clearArray(arr1);
 
+
 // Write a function for getting random value from array [1,2,3,4,5,6,7] and not repeated
 
+
 // How to find highest salaried employees from a json
-var employees =[{name:"emp1",salary:"10000"},{name:"emp2",salary:"30000"},{name:"emp3",salary:"50000"}]
+var employees = [{ name: "emp1", salary: "10000" }, { name: "emp2", salary: "30000" }, { name: "emp3", salary: "50000" }]
 
 let highestSalary = 0;
-employees.forEach(emp=>{
-    if(emp.salary > highestSalary){
+employees.forEach(emp => {
+    if (emp.salary > highestSalary) {
         highestSalary = emp.salary;
     }
 })
-console.log('highestSalary:--> ',highestSalary);  // 50000
+console.log('highestSalary:--> ', highestSalary);  // 50000
+
+
+// How can we find specific key in nested object in javascript ?
+function findKeyInNestedObject(obj, targetKey) {
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            if (key === targetKey) {
+                return obj[key]; // Key found, return the corresponding value
+            } else if (typeof obj[key] === 'object') {
+                const result = findKeyInNestedObject(obj[key], targetKey);
+                if (result !== undefined) {
+                    return result; // Key found in nested object, return its value
+                }
+            }
+        }
+    }
+    return undefined; // Key not found
+}
+
+// Example usage:
+const nestedObject = {
+    a: {
+        b: {
+            c: "Nested Value"
+        },
+        d: "Other Value"
+    },
+    e: "Another Value"
+};
+
+const keyToFind = "c";
+const result = findKeyInNestedObject(nestedObject, keyToFind);
+
+if (result !== undefined) {
+    console.log(`Found '${keyToFind}' with value: ${result}`);
+} else {
+    console.log(`'${keyToFind}' not found in the nested object.`);
+}

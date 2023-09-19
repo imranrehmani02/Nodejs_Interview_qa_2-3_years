@@ -1,5 +1,4 @@
 // Check array arr2 is subset of array arr1 or not
-
 const arr1 = [986, 25, 321, 20, 84, 100];
 const arr2 = [20, 100];
 function isSubsetOf(arr1, arr2) {
@@ -13,11 +12,13 @@ function isSubsetOf(arr1, arr2) {
 console.log("\n1> Check array arr2 is subset of array arr1 or not");
 console.log(isSubsetOf(arr1, arr2));  // true
 
+
 // Find output of given code
 console.log("\n2> Find output of given code");
 let arr3 = ['A', 'B'];
 arr3[4] = 'E';
 console.log('arr3:- ', arr3);  //  [ 'A', 'B', <2 empty items>, 'E' ]
+
 
 // Find unique value of an array
 function findUniqueValues(arr) {
@@ -29,6 +30,7 @@ console.log('findUniqueValues:- ', findUniqueValues(arr4));  // [ 1, 2, 3, 8, 5,
 /*
 -> A value in the set may only occur once; It is unique in the Set's collection.
 */
+
 
 // Find majority of array elements from array variables
 function findMajorityElements(arr) {
@@ -131,3 +133,64 @@ function solution(arr6){
 }
 console.log("\n6> Find distinct array from arrays of integer");
 solution(arr6);
+
+
+/*
+Write a program for dynamic array by using one array key from goven array of objects.
+let data1 = [
+  { res: "Ind", loc: "Indore", name: "farzi" },
+  { res: "Thai", loc: "Indore", name: "dnd" },
+  { res: "Thai", loc: "Indore", name: "test11" },
+  { res: "Chinese", loc: "Indore", name: "xyz" },
+  { res: "Italic", loc: "Indore", name: "abc" },
+  { res: "Ind", loc: "Indore", name: "def" },
+  { res: "Thai", loc: "Indore", name: "test" },
+  { res: "Italic", loc: "Indore", name: "rst" },
+  { res: "Chinese", loc: "Indore", name: "social" },
+  { res: "Ind", loc: "Indore", name: "pqr" },
+  { res: "Mughlai", loc: "Indore", name: "chk" },
+  { res: "Ind", loc: "Indore", name: "spwn" },
+  { res: "Mughlai", loc: "Indore", name: "mtn" },
+]
+
+Expected Output:- {
+  Ind: [
+    { res: 'Ind', loc: 'Indore', name: 'farzi' },
+    { res: 'Ind', loc: 'Indore', name: 'def' },
+    { res: 'Ind', loc: 'Indore', name: 'pqr' },
+    { res: 'Ind', loc: 'Indore', name: 'spwn' }
+  ],
+  Thai: [
+    { res: 'Thai', loc: 'Indore', name: 'dnd' },
+    { res: 'Thai', loc: 'Indore', name: 'test11' },
+    { res: 'Thai', loc: 'Indore', name: 'test' }
+  ],
+  Chinese: [
+    { res: 'Chinese', loc: 'Indore', name: 'xyz' },
+    { res: 'Chinese', loc: 'Indore', name: 'social' }
+  ],
+  Italic: [
+    { res: 'Italic', loc: 'Indore', name: 'abc' },
+    { res: 'Italic', loc: 'Indore', name: 'rst' }
+  ],
+  Mughlai: [
+    { res: 'Mughlai', loc: 'Indore', name: 'chk' },
+    { res: 'Mughlai', loc: 'Indore', name: 'mtn' }
+  ]
+}
+*/
+// Solution
+let obj1 = {};
+
+function arrOpr(data1){
+    data1.forEach((dt1)=>{
+        let objectKeys = Object.keys(obj1);
+        if(objectKeys.includes(dt1.res)){
+            obj1[dt1.res].push(dt1);
+        } else {
+            obj1[dt1.res] = [dt1];
+        }
+    })
+    return obj1;
+}
+console.log(arrOpr(data1));
