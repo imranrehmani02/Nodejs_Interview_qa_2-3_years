@@ -94,4 +94,15 @@ Ans. The CREATE INDEX statement is used to create index in tables.
 11. How to drop index in mysql ?
 Ans. The DROP INDEX statement is used to delete an index in the table.
     Syntax: ALTER TABLE table_name DROP INDEX index_name;
+
+
+
+12. Database relationships in MySQL ?
+Ans. There are mainly three types of database relationship in MySQL:
+    1. One-to-one Relation:- If only one data in one table relates to the only one
+                    data in another table, it is known as one-to-one relation.
+    2. One-to-many Relation: If only one data in one tablerelates to the multiple
+                    data in another table, it is known as one-to-many relation.
+    3. Many-to-Many Relation: If multiple data in one table relates to the multiple
+                    data in another table, it is known as many-to-many relation.
 */

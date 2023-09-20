@@ -28,5 +28,14 @@ Q. What is Mongodb charts ?
 Ans. MongoDB Charts is a tool to create visual representations of your MongoDB data. 
                 Data visualization is a key component to providing a clear understanding
     of your data, highlighting correlations between variables and making it easy to
-    discern patterns and trends within your dataset. 
+    discern patterns and trends within your dataset.
+
+
+
+Q. Database relationships in MongoDB ?
+Ans. In MongoDB, one-to-one, one-to-many, and many-to-many relations can be implemented 
+    in two ways:
+
+    1. Using embedded documents
+    2. Using the reference of documents of another collection
 */
