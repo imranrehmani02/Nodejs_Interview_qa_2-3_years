@@ -42,6 +42,9 @@ Q. What is Cluster ?
 Ans. Cluster of nodejs processes can be used to run multiple instance of node js
     that can distribute workloads among their application threads.
 
+    -> The cluster module provides a way of creating child processes that run simultaneously
+        and share the same server port.
+
 */
 
 
