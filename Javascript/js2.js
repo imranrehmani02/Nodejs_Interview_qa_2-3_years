@@ -45,6 +45,10 @@ Ans. Cluster of nodejs processes can be used to run multiple instance of node js
     -> The cluster module provides a way of creating child processes that run simultaneously
         and share the same server port.
 
+    Node.js runs single thread programming which is very memory efficient, but to take
+        advantage of computer multicore systems, the cluster module allows you to easily 
+        create child processes that each runs on their own single thread to handle the load.
+
 */
 
 
