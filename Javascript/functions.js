@@ -73,4 +73,20 @@ Ans. Higher order functions are functions that take one or more functions as arg
 Q. How to make function async ?
 Ans. An asynchronous javascript function can be created with the ASYNC keyword before the
     function name, or before() when using the arrow function syntax.
+
+
+Q. Difference between parameters and arguments ?
+Ans. Parameters :- Parameters are variables listed in the function definition. They act as placeholders
+                for values that the function will receive when it is called.
+                -> Parameters are local variables with in the function scope, and they can be used within
+                the function body to perform operations.
+
+            Example:- function add (a, b){
+                return a + b;
+            }
+
+    Arguments :- Arguments are the actual values or expressions that are passed to a function when it is
+                called.
+
+            Example:- const result = add(4, 5);
 */
