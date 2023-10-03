@@ -105,4 +105,12 @@ Ans. There are mainly three types of database relationship in MySQL:
                     data in another table, it is known as one-to-many relation.
     3. Many-to-Many Relation: If multiple data in one table relates to the multiple
                     data in another table, it is known as many-to-many relation.
+
+
+
+
+13. Distinct keyword in MySQL ?
+Ans. The Select Distinct statement is used to return only distinct (difference) values.
+
+    SELECT DICTINCT column1, column2 from table_name.
 */
