@@ -1,17 +1,36 @@
-/* Armstrong number is a number that is equal to the sum of cubes of its digits. 
-For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers. */
+//   Armstrong Number
 
-let num = 153;
+let n=153;
+let t1=n;
+let leng=0;
 
-let rem = 0;
-let short = 0;
-let res = 0;
-let numLength = num.length;
-
-while (short > 0) {
-    rem = num % 10;
-    console.log(rem)
-    res = res + (rem * rem * rem);
-    short = num / 10;
+while(t1!=0)
+{
+	leng = leng+1;
+	t1=parseInt(t1/10);
 }
-console.log(res)
+
+let t2=n;
+let arm=0;
+let rem;
+
+while(t2!=0)
+{
+	let mul=1;
+	rem=parseInt(t2%10);
+	for(let i=1; i<=leng; i++)
+	{
+		mul = mul * rem;
+	}
+	arm =parseInt(arm+mul);
+	t2=parseInt(t2/10);
+}
+
+if(arm==n)
+{
+	console.log(n+" is armstrong");
+}
+else
+{
+	console.log(n+" is not armstrong");
+}

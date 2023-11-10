@@ -1,15 +1,15 @@
-let result = [];
-let a = 0, b = 1, c;
-result.push(a);
+
+
+//Fibonacci 
+
+
+let a=0,b=1,c;
 console.log(a);
-result.push(b);
 console.log(b);
-for (let i = 1; i <= 10; i++)
+for(let i=1; i<=10;  i++)
 {
-    c = a + b;
-    result.push(c);
-    console.log(c);
-    a = b;
-    b = c;
+	c=a+b;
+	console.log(c);
+	a=b;
+	b=c;
 }
-console.log(result);
