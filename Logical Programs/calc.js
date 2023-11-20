@@ -1,7 +1,6 @@
+// Calculator with switch
 
-// Calculator
-
-let a=12,b=4,c;
+let a = 12, b = 4, c;
 let op='*';
 
 switch(op)

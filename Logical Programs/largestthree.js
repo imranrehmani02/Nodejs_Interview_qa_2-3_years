@@ -1,17 +1,13 @@
-
 //  Largest Three
 
-var a=100,b=20,c=40;
+var a = 100, b = 20, c = 40;
 
-if(a>b && a>c)
-{
+if (a > b && a > c) {
 	console.log("A is greater");
 }
-else if(b>a && b>c)
-{
+else if (b > a && b > c) {
 	console.log("B is greater");
 }
-else
-{
+else {
 	console.log("C is greater");
 }
