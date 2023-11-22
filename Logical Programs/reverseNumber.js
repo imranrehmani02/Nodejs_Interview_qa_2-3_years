@@ -1,4 +1,4 @@
-// Reverse
+// Reverse number
 
 let n = 8956, rem, rev = 0;
 
